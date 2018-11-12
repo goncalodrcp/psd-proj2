@@ -1,0 +1,382 @@
+
+*** Running vivado
+    with args -log datapath.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source datapath.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source datapath.tcl -notrace
+Command: synth_design -top datapath -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13817 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1262.348 ; gain = 80.867 ; free physical = 6087 ; free virtual = 10514
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'datapath' [/home/josecoelho/Documents/IST/PSD/Labs/Lab2/psd-proj2/Lab2/Lab2.srcs/sources_1/new/datapath.vhd:67]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (1#1) [/home/josecoelho/Documents/IST/PSD/Labs/Lab2/psd-proj2/Lab2/Lab2.srcs/sources_1/new/datapath.vhd:67]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1306.973 ; gain = 125.492 ; free physical = 6096 ; free virtual = 10523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1306.973 ; gain = 125.492 ; free physical = 6096 ; free virtual = 10523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1314.977 ; gain = 133.496 ; free physical = 6095 ; free virtual = 10522
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/josecoelho/Documents/IST/PSD/Labs/Lab2/psd-proj2/Lab2/Lab2.srcs/sources_1/new/datapath.vhd:151]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/josecoelho/Documents/IST/PSD/Labs/Lab2/psd-proj2/Lab2/Lab2.srcs/sources_1/new/datapath.vhd:157]
+WARNING: [Synth 8-6014] Unused sequential element RA_reg was removed.  [/home/josecoelho/Documents/IST/PSD/Labs/Lab2/psd-proj2/Lab2/Lab2.srcs/sources_1/new/datapath.vhd:161]
+WARNING: [Synth 8-327] inferring latch for variable 'adder2_result_truncated_reg' [/home/josecoelho/Documents/IST/PSD/Labs/Lab2/psd-proj2/Lab2/Lab2.srcs/sources_1/new/datapath.vhd:173]
+WARNING: [Synth 8-327] inferring latch for variable 'adder2_result_reg' [/home/josecoelho/Documents/IST/PSD/Labs/Lab2/psd-proj2/Lab2/Lab2.srcs/sources_1/new/datapath.vhd:157]
+WARNING: [Synth 8-327] inferring latch for variable 'adder2_entry_a_reg' [/home/josecoelho/Documents/IST/PSD/Labs/Lab2/psd-proj2/Lab2/Lab2.srcs/sources_1/new/datapath.vhd:124]
+WARNING: [Synth 8-327] inferring latch for variable 'adder2_entry_b_reg' [/home/josecoelho/Documents/IST/PSD/Labs/Lab2/psd-proj2/Lab2/Lab2.srcs/sources_1/new/datapath.vhd:129]
+WARNING: [Synth 8-327] inferring latch for variable 'RB_entry_reg' [/home/josecoelho/Documents/IST/PSD/Labs/Lab2/psd-proj2/Lab2/Lab2.srcs/sources_1/new/datapath.vhd:143]
+WARNING: [Synth 8-327] inferring latch for variable 'multiplier_entry_b_reg' [/home/josecoelho/Documents/IST/PSD/Labs/Lab2/psd-proj2/Lab2/Lab2.srcs/sources_1/new/datapath.vhd:135]
+WARNING: [Synth 8-327] inferring latch for variable 'RA_entry_reg' [/home/josecoelho/Documents/IST/PSD/Labs/Lab2/psd-proj2/Lab2/Lab2.srcs/sources_1/new/datapath.vhd:139]
+WARNING: [Synth 8-327] inferring latch for variable 'adder1_result_truncated_reg' [/home/josecoelho/Documents/IST/PSD/Labs/Lab2/psd-proj2/Lab2/Lab2.srcs/sources_1/new/datapath.vhd:168]
+WARNING: [Synth 8-327] inferring latch for variable 'adder1_result_reg' [/home/josecoelho/Documents/IST/PSD/Labs/Lab2/psd-proj2/Lab2/Lab2.srcs/sources_1/new/datapath.vhd:151]
+WARNING: [Synth 8-327] inferring latch for variable 'adder1_entry_a_reg' [/home/josecoelho/Documents/IST/PSD/Labs/Lab2/psd-proj2/Lab2/Lab2.srcs/sources_1/new/datapath.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'adder1_entry_b_reg' [/home/josecoelho/Documents/IST/PSD/Labs/Lab2/psd-proj2/Lab2/Lab2.srcs/sources_1/new/datapath.vhd:120]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1322.984 ; gain = 141.504 ; free physical = 6087 ; free virtual = 10515
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     11 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 3     
+	               10 Bit    Registers := 5     
+	                8 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 16    
+	   4 Input     11 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module datapath 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     11 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 3     
+	               10 Bit    Registers := 5     
+	                8 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 16    
+	   4 Input     11 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-6014] Unused sequential element RA_reg was removed.  [/home/josecoelho/Documents/IST/PSD/Labs/Lab2/psd-proj2/Lab2/Lab2.srcs/sources_1/new/datapath.vhd:161]
+DSP Report: Generating DSP RC_reg, operation Mode is: (A2*B)'.
+DSP Report: register RA_reg is absorbed into DSP RC_reg.
+DSP Report: register RC_reg is absorbed into DSP RC_reg.
+DSP Report: operator multiplier_result is absorbed into DSP RC_reg.
+INFO: [Synth 8-3886] merging instance 'adder1_entry_b_reg[10]' (LD) to 'adder1_entry_b_reg[9]'
+INFO: [Synth 8-3886] merging instance 'adder1_result_truncated_reg[10]' (LD) to 'adder1_result_reg[10]'
+WARNING: [Synth 8-3332] Sequential element (adder2_result_truncated_reg[10]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder2_result_truncated_reg[9]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder2_result_truncated_reg[8]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder2_result_truncated_reg[7]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder2_result_truncated_reg[6]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder2_result_truncated_reg[5]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder2_result_truncated_reg[4]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder2_result_truncated_reg[3]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder2_result_truncated_reg[2]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder2_result_truncated_reg[1]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder2_result_truncated_reg[0]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder2_result_reg[10]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder2_result_reg[9]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder2_result_reg[8]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder2_result_reg[7]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder2_result_reg[6]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder2_result_reg[5]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder2_result_reg[4]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder2_result_reg[3]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder2_result_reg[2]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder2_result_reg[1]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder2_result_reg[0]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder2_entry_b_reg[7]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder2_entry_b_reg[6]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder2_entry_b_reg[5]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder2_entry_b_reg[4]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder2_entry_b_reg[3]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder2_entry_b_reg[2]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder2_entry_b_reg[1]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder2_entry_b_reg[0]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (RB_entry_reg[10]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (RB_entry_reg[9]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (RB_entry_reg[8]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (RB_entry_reg[7]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (RB_entry_reg[6]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (RB_entry_reg[5]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (RB_entry_reg[4]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (RB_entry_reg[3]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (RB_entry_reg[2]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (RB_entry_reg[1]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (RB_entry_reg[0]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (multiplier_entry_b_reg[10]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (multiplier_entry_b_reg[9]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (multiplier_entry_b_reg[8]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (multiplier_entry_b_reg[7]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (multiplier_entry_b_reg[6]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (multiplier_entry_b_reg[5]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (multiplier_entry_b_reg[4]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (multiplier_entry_b_reg[3]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (multiplier_entry_b_reg[2]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (multiplier_entry_b_reg[1]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (multiplier_entry_b_reg[0]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (RA_entry_reg[10]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (RA_entry_reg[9]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (RA_entry_reg[8]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (RA_entry_reg[7]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (RA_entry_reg[6]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (RA_entry_reg[5]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (RA_entry_reg[4]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (RA_entry_reg[3]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (RA_entry_reg[2]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (RA_entry_reg[1]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (RA_entry_reg[0]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder1_result_truncated_reg[9]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder1_result_truncated_reg[8]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder1_result_truncated_reg[7]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder1_result_truncated_reg[6]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder1_result_truncated_reg[5]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder1_result_truncated_reg[4]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder1_result_truncated_reg[3]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder1_result_truncated_reg[2]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder1_result_truncated_reg[1]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder1_result_truncated_reg[0]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder1_result_reg[9]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder1_result_reg[8]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder1_result_reg[7]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder1_result_reg[6]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder1_result_reg[5]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder1_result_reg[4]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder1_result_reg[3]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder1_result_reg[2]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder1_result_reg[1]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder1_result_reg[0]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder1_entry_b_reg[9]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder1_entry_b_reg[8]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder1_entry_b_reg[7]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder1_entry_b_reg[6]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder1_entry_b_reg[5]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder1_entry_b_reg[4]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder1_entry_b_reg[3]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder1_entry_b_reg[2]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder1_entry_b_reg[1]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder1_entry_b_reg[0]) is unused and will be removed from module datapath.
+WARNING: [Synth 8-3332] Sequential element (adder1_result_reg[10]) is unused and will be removed from module datapath.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1440.344 ; gain = 258.863 ; free physical = 5921 ; free virtual = 10352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|datapath    | (A2*B)'     | 11     | 11     | -      | -      | 22     | 1    | 0    | -    | -    | -     | 1    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1440.344 ; gain = 258.863 ; free physical = 5921 ; free virtual = 10352
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1440.344 ; gain = 258.863 ; free physical = 5919 ; free virtual = 10350
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 1440.344 ; gain = 258.863 ; free physical = 5920 ; free virtual = 10351
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 1440.344 ; gain = 258.863 ; free physical = 5920 ; free virtual = 10351
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 1440.344 ; gain = 258.863 ; free physical = 5920 ; free virtual = 10351
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 1440.344 ; gain = 258.863 ; free physical = 5920 ; free virtual = 10351
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 1440.344 ; gain = 258.863 ; free physical = 5920 ; free virtual = 10351
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 1440.344 ; gain = 258.863 ; free physical = 5920 ; free virtual = 10351
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY4  |     6|
+|3     |DSP48E1 |     1|
+|4     |LUT1    |     2|
+|5     |LUT2    |     5|
+|6     |LUT3    |    33|
+|7     |LUT4    |     1|
+|8     |LUT5    |    66|
+|9     |LUT6    |     2|
+|10    |FDRE    |   104|
+|11    |LD      |    19|
+|12    |LDC     |     6|
+|13    |IBUF    |    93|
+|14    |OBUF    |    10|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   349|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 1440.344 ; gain = 258.863 ; free physical = 5920 ; free virtual = 10351
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 107 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 1440.344 ; gain = 258.863 ; free physical = 5921 ; free virtual = 10351
+Synthesis Optimization Complete : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 1440.352 ; gain = 258.863 ; free physical = 5921 ; free virtual = 10351
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 125 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 25 instances were transformed.
+  LD => LDCE: 19 instances
+  LDC => LDCE: 6 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+15 Infos, 107 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 1573.371 ; gain = 392.023 ; free physical = 5890 ; free virtual = 10321
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/josecoelho/Documents/IST/PSD/Labs/Lab2/psd-proj2/Lab2/Lab2.runs/synth_1/datapath.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file datapath_utilization_synth.rpt -pb datapath_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.09 . Memory (MB): peak = 1597.383 ; gain = 0.000 ; free physical = 5890 ; free virtual = 10321
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 12 20:45:25 2018...

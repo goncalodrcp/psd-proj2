@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="datapath_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="datapath_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="706970000fs"></ZoomStartTime>
+      <ZoomEndTime time="1018248196fs"></ZoomEndTime>
+      <Cursor1Time time="575309000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="178"></NameColumnWidth>
+      <ValueColumnWidth column_width="66"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="16" />
+   <wvobject type="array" fp_name="/datapath_tb/Q00">
+      <obj_property name="ElementShortName">Q00[9:0]</obj_property>
+      <obj_property name="ObjectShortName">Q00[9:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/datapath_tb/Q10">
+      <obj_property name="ElementShortName">Q10[9:0]</obj_property>
+      <obj_property name="ObjectShortName">Q10[9:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/datapath_tb/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/datapath_tb/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/datapath_tb/operation_selector">
+      <obj_property name="ElementShortName">operation_selector[1:0]</obj_property>
+      <obj_property name="ObjectShortName">operation_selector[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/datapath_tb/uut/truncate_selector">
+      <obj_property name="ElementShortName">truncate_selector[1:0]</obj_property>
+      <obj_property name="ObjectShortName">truncate_selector[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/datapath_tb/enables">
+      <obj_property name="ElementShortName">enables[4:0]</obj_property>
+      <obj_property name="ObjectShortName">enables[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/datapath_tb/uut/adder1_entry_a">
+      <obj_property name="ElementShortName">adder1_entry_a[10:0]</obj_property>
+      <obj_property name="ObjectShortName">adder1_entry_a[10:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/datapath_tb/uut/adder1_entry_b">
+      <obj_property name="ElementShortName">adder1_entry_b[10:0]</obj_property>
+      <obj_property name="ObjectShortName">adder1_entry_b[10:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/datapath_tb/uut/adder1_add">
+      <obj_property name="ElementShortName">adder1_add[10:0]</obj_property>
+      <obj_property name="ObjectShortName">adder1_add[10:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/datapath_tb/uut/adder1_sub">
+      <obj_property name="ElementShortName">adder1_sub[10:0]</obj_property>
+      <obj_property name="ObjectShortName">adder1_sub[10:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/datapath_tb/uut/adder1_result">
+      <obj_property name="ElementShortName">adder1_result[10:0]</obj_property>
+      <obj_property name="ObjectShortName">adder1_result[10:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/datapath_tb/uut/adder1_truncated">
+      <obj_property name="ElementShortName">adder1_truncated[10:0]</obj_property>
+      <obj_property name="ObjectShortName">adder1_truncated[10:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/datapath_tb/uut/adder1_result_truncated">
+      <obj_property name="ElementShortName">adder1_result_truncated[10:0]</obj_property>
+      <obj_property name="ObjectShortName">adder1_result_truncated[10:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/datapath_tb/uut/RA">
+      <obj_property name="ElementShortName">RA[10:0]</obj_property>
+      <obj_property name="ObjectShortName">RA[10:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/datapath_tb/uut/RA_entry">
+      <obj_property name="ElementShortName">RA_entry[10:0]</obj_property>
+      <obj_property name="ObjectShortName">RA_entry[10:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>
