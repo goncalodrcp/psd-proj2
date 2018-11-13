@@ -10,15 +10,25 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="706970000fs"></ZoomStartTime>
-      <ZoomEndTime time="1018248196fs"></ZoomEndTime>
-      <Cursor1Time time="575309000fs"></Cursor1Time>
+      <ZoomStartTime time="304530000fs"></ZoomStartTime>
+      <ZoomEndTime time="356459980fs"></ZoomEndTime>
+      <Cursor1Time time="348256000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="178"></NameColumnWidth>
-      <ValueColumnWidth column_width="66"></ValueColumnWidth>
+      <NameColumnWidth column_width="226"></NameColumnWidth>
+      <ValueColumnWidth column_width="86"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="16" />
+   <WVObjectSize size="29" />
+   <wave_markers>
+      <marker label="" time="500000000" />
+      <marker label="" time="305000000" />
+      <marker label="" time="315000000" />
+      <marker label="" time="325000000" />
+      <marker label="" time="335000000" />
+      <marker label="" time="345000000" />
+      <marker label="" time="355000000" />
+      <marker label="" time="365000000" />
+   </wave_markers>
    <wvobject type="array" fp_name="/datapath_tb/Q00">
       <obj_property name="ElementShortName">Q00[9:0]</obj_property>
       <obj_property name="ObjectShortName">Q00[9:0]</obj_property>
@@ -27,6 +37,16 @@
    <wvobject type="array" fp_name="/datapath_tb/Q10">
       <obj_property name="ElementShortName">Q10[9:0]</obj_property>
       <obj_property name="ObjectShortName">Q10[9:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/datapath_tb/Q10">
+      <obj_property name="ElementShortName">Q10[9:0]</obj_property>
+      <obj_property name="ObjectShortName">Q10[9:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/datapath_tb/Q11">
+      <obj_property name="ElementShortName">Q11[9:0]</obj_property>
+      <obj_property name="ObjectShortName">Q11[9:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject type="logic" fp_name="/datapath_tb/clk">
@@ -40,14 +60,22 @@
    <wvobject type="array" fp_name="/datapath_tb/operation_selector">
       <obj_property name="ElementShortName">operation_selector[1:0]</obj_property>
       <obj_property name="ObjectShortName">operation_selector[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/datapath_tb/muxes">
+      <obj_property name="ElementShortName">muxes[9:0]</obj_property>
+      <obj_property name="ObjectShortName">muxes[9:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/datapath_tb/uut/truncate_selector">
       <obj_property name="ElementShortName">truncate_selector[1:0]</obj_property>
       <obj_property name="ObjectShortName">truncate_selector[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/datapath_tb/enables">
       <obj_property name="ElementShortName">enables[4:0]</obj_property>
       <obj_property name="ObjectShortName">enables[4:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/datapath_tb/uut/adder1_entry_a">
       <obj_property name="ElementShortName">adder1_entry_a[10:0]</obj_property>
@@ -57,16 +85,6 @@
    <wvobject type="array" fp_name="/datapath_tb/uut/adder1_entry_b">
       <obj_property name="ElementShortName">adder1_entry_b[10:0]</obj_property>
       <obj_property name="ObjectShortName">adder1_entry_b[10:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/datapath_tb/uut/adder1_add">
-      <obj_property name="ElementShortName">adder1_add[10:0]</obj_property>
-      <obj_property name="ObjectShortName">adder1_add[10:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/datapath_tb/uut/adder1_sub">
-      <obj_property name="ElementShortName">adder1_sub[10:0]</obj_property>
-      <obj_property name="ObjectShortName">adder1_sub[10:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/datapath_tb/uut/adder1_result">
@@ -83,15 +101,89 @@
       <obj_property name="ElementShortName">adder1_result_truncated[10:0]</obj_property>
       <obj_property name="ObjectShortName">adder1_result_truncated[10:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/datapath_tb/uut/adder2_entry_a">
+      <obj_property name="ElementShortName">adder2_entry_a[10:0]</obj_property>
+      <obj_property name="ObjectShortName">adder2_entry_a[10:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/datapath_tb/uut/adder2_entry_b">
+      <obj_property name="ElementShortName">adder2_entry_b[10:0]</obj_property>
+      <obj_property name="ObjectShortName">adder2_entry_b[10:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/datapath_tb/uut/adder2_result">
+      <obj_property name="ElementShortName">adder2_result[10:0]</obj_property>
+      <obj_property name="ObjectShortName">adder2_result[10:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/datapath_tb/uut/adder2_truncated">
+      <obj_property name="ElementShortName">adder2_truncated[10:0]</obj_property>
+      <obj_property name="ObjectShortName">adder2_truncated[10:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/datapath_tb/uut/adder2_result_truncated">
+      <obj_property name="ElementShortName">adder2_result_truncated[10:0]</obj_property>
+      <obj_property name="ObjectShortName">adder2_result_truncated[10:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/datapath_tb/uut/multiplier_entry_b">
+      <obj_property name="ElementShortName">multiplier_entry_b[10:0]</obj_property>
+      <obj_property name="ObjectShortName">multiplier_entry_b[10:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/datapath_tb/uut/multiplier_result">
+      <obj_property name="ElementShortName">multiplier_result[21:0]</obj_property>
+      <obj_property name="ObjectShortName">multiplier_result[21:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/datapath_tb/uut/multiplier_result_truncated">
+      <obj_property name="ElementShortName">multiplier_result_truncated[10:0]</obj_property>
+      <obj_property name="ObjectShortName">multiplier_result_truncated[10:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/datapath_tb/uut/RA">
       <obj_property name="ElementShortName">RA[10:0]</obj_property>
       <obj_property name="ObjectShortName">RA[10:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/datapath_tb/uut/RB">
+      <obj_property name="ElementShortName">RB[10:0]</obj_property>
+      <obj_property name="ObjectShortName">RB[10:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/datapath_tb/uut/RC">
+      <obj_property name="ElementShortName">RC[10:0]</obj_property>
+      <obj_property name="ObjectShortName">RC[10:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/datapath_tb/uut/RD">
+      <obj_property name="ElementShortName">RD[10:0]</obj_property>
+      <obj_property name="ObjectShortName">RD[10:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/datapath_tb/uut/RA_entry">
       <obj_property name="ElementShortName">RA_entry[10:0]</obj_property>
       <obj_property name="ObjectShortName">RA_entry[10:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/datapath_tb/uut/RB_entry">
+      <obj_property name="ElementShortName">RB_entry[10:0]</obj_property>
+      <obj_property name="ObjectShortName">RB_entry[10:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
 </wave_config>

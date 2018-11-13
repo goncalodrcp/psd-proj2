@@ -114,7 +114,7 @@ begin
     -- MUX1
     adder1_entry_a <= signed(RQ10(9) & RQ10) when muxes(9 downto 8) = "00" else
                       signed(RQ11(9) & RQ11) when muxes(9 downto 8) = "01" else
-                      signed(RC) when muxes(9 downto 8) = "11";
+                      signed(RC) when muxes(9 downto 8) = "10";
     
     -- MUX2
     adder1_entry_b <= signed(RQ00(9) & RQ00) when muxes(7) = '0' else
@@ -123,13 +123,13 @@ begin
     -- MUX3
     adder2_entry_a <= signed("000" & Rx) when muxes(6 downto 5) = "00" else
                       signed("000" & Ry) when muxes(6 downto 5) = "01" else
-                      signed(RB) when muxes(6 downto 5) = "10";
+                      signed(adder1_result_truncated) when muxes(6 downto 5) = "10" else
+                      signed(RC) when muxes(6 downto 5) = "11";
 
     -- MUX4
     adder2_entry_b <= signed("000" & Rx0) when muxes(4 downto 3) = "00" else
                       signed("000" & Ry0) when muxes(4 downto 3) = "01" else
-                      signed(adder1_result_truncated) when muxes(4 downto 3) = "10" else
-                      signed(RC) when muxes(4 downto 3) = "11";
+                      signed(RB) when muxes(4 downto 3) = "10";
     
     -- MUX5
     multiplier_entry_b <= signed(RB) when muxes(2) = '0' else

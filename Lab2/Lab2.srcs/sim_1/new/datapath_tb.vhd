@@ -120,54 +120,36 @@ begin
         y <= "00100100" after 100 ns; -- 36
         x0 <= "00010100" after 100 ns; -- 20
         y0 <= "00010100" after 100 ns; -- 20
+        Q00 <= "0001100100" after 100 ns; -- 100
         Q01 <= "0011001000" after 100 ns; -- 200
-        Q11 <= "0011001000" after 100 ns; -- 200
-        
-        Q00 <= "0001100100" after 100 ns, -- 100
-               "0111111111" after 300 ns, -- 511
-               "0000000000" after 400 ns, -- 0
-               "1000000000" after 500 ns; -- -512
+        Q10 <= "0100101100" after 100 ns; -- 300
+        Q11 <= "0111110100" after 100 ns; -- 500
 
-        Q10 <= "0001100100" after 100 ns, -- 100
-               "1000000000" after 300 ns, -- -512
-               "0000000000" after 500 ns, -- 0
-               "0111111111" after 600 ns; -- 511
-
-        operation_selector <= "00" after 200 ns, -- ADD on ADDER1, ADD on ADDER2
-                              "10" after 300 ns; -- SUB on ADDER1, ADD on ADDER2
- 
-        truncate_selector <= "00" after 300 ns, -- NO TRUNCATION
-                             "10" after 350 ns, -- TRUNCATION on ADDER1
-                             "00" after 400 ns, -- NO TRUNCATION
-                             "10" after 450 ns, -- TRUNCATION on ADDER1 
-                             "00" after 500 ns, -- NO TRUNCATION
-                             "10" after 550 ns, -- TRUNCATION on ADDER1
-                             "00" after 600 ns, -- NO TRUNCATION
-                             "10" after 650 ns, -- TRUNCATION on ADDER1
-                             "00" after 700 ns, -- NO TRUNCATION
-                             "10" after 750 ns; -- TRUNCATION on ADDER1
+        operation_selector <= "11" after 205 ns, -- SUB on ADDER1, SUB on ADDER2, same for 215 ns
+                              "01" after 225 ns, -- ADD on ADDER1, SUB on ADDER 2, same for 235 ns, same for 245 ns
+                              "00" after 255 ns; -- ADD on ADDER1, ADD on ADDER2
         
-        enables <= "00000" after 300 ns, -- NO ENABLE
-                   "10000" after 320 ns, -- ENABLE ON RA
-                   "00000" after 330 ns, -- NO ENABLE
-                   "10000" after 370 ns, -- ENABLE ON RA
-                   "00000" after 380 ns, -- NO ENABLE
-                   "10000" after 420 ns, -- ENABLE ON RA
-                   "00000" after 430 ns, -- NO ENABLE
-                   "10000" after 470 ns, -- ENABLE ON RA
-                   "00000" after 480 ns, -- NO ENABLE
-                   "10000" after 520 ns, -- ENABLE ON RA
-                   "00000" after 530 ns, -- NO ENABLE
-                   "10000" after 570 ns, -- ENABLE ON RA
-                   "00000" after 580 ns, -- NO ENABLE
-                   "10000" after 620 ns, -- ENABLE ON RA
-                   "00000" after 630 ns, -- NO ENABLE
-                   "10000" after 670 ns, -- ENABLE ON RA
-                   "00000" after 680 ns, -- NO ENABLE
-                   "10000" after 720 ns, -- ENABLE ON RA
-                   "00000" after 730 ns, -- NO ENABLE
-                   "10000" after 770 ns, -- ENABLE ON RA
-                   "00000" after 780 ns; -- NO ENABLE
+        truncate_selector <= "10" after 205 ns, -- TRUNCATE on ADDER1, same for 215 ns
+                             "00" after 225 ns, -- NO TRUNCATE
+                             "01" after 235 ns, -- TRUNCATE on ADDER2, same for 245 ns
+                             "00" after 255 ns; -- NO TRUNCATE
+
+        -- Enables are 1 clock cycle shifted
+        enables <= "00000" after 205 ns, -- No enable
+                   "11000" after 215 ns, -- Enable on RA and RB
+                   "10110" after 225 ns, -- Enable on RA, RC and RD
+                   "01100" after 235 ns, -- Enable on RB and RC
+                   "10000" after 245 ns, -- Enable on RA
+                   "00100" after 255 ns, -- Enable on RC
+                   "00001" after 265 ns; -- Enable on RP
+
+        muxes <= "0000000001" after 205 ns, -- Q10 on ADDER1_A, Q00 on ADDER1_B, x on ADDER2_A, x0 on ADDER2_B, ADDER1 on RA, ADDER2 on RB
+                 "0110101000" after 215 ns, -- Q11 on ADDER1_A, Q01 on ADDER1_B, y on ADDER2_A, y0 on ADDER2_B, RB on MULT_B, ADDER1 on RA
+                 "1000000000" after 225 ns, -- RC on ADDER1_A, Q00 on ADDER1_B, RB on MULT_B, ADDER1 on RB
+                 "1011010010" after 235 ns, -- RC on ADDER1_A, Q01 on ADDER1_B, ADDER1 on ADDER2_A, RB on ADDER2_B, ADDER2 on RA
+                 "0000000100" after 245 ns, -- RD on MULT_B
+                 "0001110000" after 255 ns; -- RC on ADDER2_A, RB on ADDER2_B
+
         wait;
     end process;
 end;

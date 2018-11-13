@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+import math
+
 def get_number(min, max, name):
     n = int(input("{} [{}, {}]: ".format(name, min, max)))
     if n > max or n < min:
@@ -32,7 +34,7 @@ def main():
     # Cycle 1
     print("Cycle 1 start.")
     z1_pre = Q10 - Q00
-    z1 = z1_pre/32
+    z1 = math.trunc(z1_pre/32)
     z2 = x - x0
     print("[ADDER1, OP 1] Z1 (before truncation) = {}".format(z1_pre))
     print("[ADDER1, OP 1] Z1 = {}".format(z1))
@@ -42,7 +44,7 @@ def main():
     # Cycle 2
     print("Cycle 2 start.")
     z3_pre = Q11 - Q01
-    z3 = z3_pre/32
+    z3 = math.trunc(z3_pre/32)
     z9 = y -y0
     z4 = z1 * z2
     print("[ADDER1, OP 8] Z3 (before truncation) = {}".format(z3_pre))
@@ -63,7 +65,7 @@ def main():
     print("Cycle 4 start.")
     z7 = z5 + Q01
     z8_pre = z7 - z6
-    z8 = z8_pre/32
+    z8 = math.trunc(z8_pre/32)
     print("[ADDER1, OP 10] Z7 = {}".format(z7))
     print("[ADDER2, OP 5] Z8 (before truncation) = {}".format(z8_pre))
     print("[ADDER2, OP 5] Z8 = {}".format(z8))
