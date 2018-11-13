@@ -1,74 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1542118707">
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="PA-TCL" Name="circuit.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="circuit_bus_skew_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="circuit_reports.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="circuit_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="circuit_opt.dcp"/>
+  <File Type="OPT-DRC" Name="circuit_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="circuit.hwdef"/>
+  <File Type="PWROPT-DCP" Name="circuit_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="circuit_placed.dcp"/>
+  <File Type="PLACE-IO" Name="circuit_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="circuit_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="circuit_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="circuit_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="circuit_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="circuit_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="circuit_physopt.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="circuit_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="circuit_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="circuit_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="circuit_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="circuit_drc_routed.pb"/>
+  <File Type="BG-BIT" Name="circuit.bit"/>
+  <File Type="ROUTE-STATUS-PB" Name="circuit_route_status.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="circuit_methodology_drc_routed.rpt"/>
+  <File Type="BG-BIN" Name="circuit.bin"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="circuit_timing_summary_routed.rpt"/>
+  <File Type="BITSTR-MSK" Name="circuit.msk"/>
+  <File Type="ROUTE-TIMING-PB" Name="circuit_timing_summary_routed.pb"/>
+  <File Type="BITSTR-RBT" Name="circuit.rbt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="circuit_timing_summary_routed.rpx"/>
+  <File Type="BITSTR-NKY" Name="circuit.nky"/>
+  <File Type="BITSTR-BMM" Name="circuit_bd.bmm"/>
+  <File Type="ROUTE-CLK" Name="circuit_clock_utilization_routed.rpt"/>
   <File Type="BG-DRC" Name="circuit.drc"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="circuit_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="circuit.mmi"/>
+  <File Type="ROUTE-BUS-SKEW" Name="circuit_bus_skew_routed.rpt"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="BG-BGN" Name="circuit.bgn"/>
   <File Type="BITSTR-SYSDEF" Name="circuit.sysdef"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="circuit.ltx"/>
-  <File Type="BITSTR-MMI" Name="circuit.mmi"/>
-  <File Type="BITSTR-BMM" Name="circuit_bd.bmm"/>
-  <File Type="BITSTR-NKY" Name="circuit.nky"/>
-  <File Type="BITSTR-RBT" Name="circuit.rbt"/>
-  <File Type="BITSTR-MSK" Name="circuit.msk"/>
-  <File Type="BG-BIN" Name="circuit.bin"/>
-  <File Type="BG-BIT" Name="circuit.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="circuit_bus_skew_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="circuit_bus_skew_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="circuit_bus_skew_postroute_physopted.rpt"/>
   <File Type="RDI-RDI" Name="circuit.vdi"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="circuit_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="circuit_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="circuit_timing_summary_postroute_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="circuit_postroute_physopt_bb.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="circuit_postroute_physopt.dcp"/>
-  <File Type="ROUTE-BUS-SKEW" Name="circuit_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="circuit_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-SIMILARITY" Name="circuit_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-TIMING-RPX" Name="circuit_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-TIMING-PB" Name="circuit_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="circuit_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="circuit_route_status.pb"/>
   <File Type="ROUTE-STATUS" Name="circuit_route_status.rpt"/>
   <File Type="ROUTE-PWR-RPX" Name="circuit_power_routed.rpx"/>
   <File Type="ROUTE-PWR-SUM" Name="circuit_power_summary_routed.pb"/>
   <File Type="ROUTE-PWR" Name="circuit_power_routed.rpt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="circuit_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="circuit_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="circuit_methodology_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-RPX" Name="circuit_drc_routed.rpx"/>
-  <File Type="ROUTE-DRC-PB" Name="circuit_drc_routed.pb"/>
-  <File Type="ROUTE-DRC" Name="circuit_drc_routed.rpt"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="circuit_routed_bb.dcp"/>
-  <File Type="ROUTE-DCP" Name="circuit_routed.dcp"/>
-  <File Type="ROUTE-ERROR-DCP" Name="circuit_routed_error.dcp"/>
-  <File Type="PHYSOPT-TIMING" Name="circuit_timing_summary_physopted.rpt"/>
-  <File Type="PHYSOPT-DRC" Name="circuit_drc_physopted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="circuit_physopt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="circuit_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="circuit_postplace_pwropt.dcp"/>
-  <File Type="PLACE-TIMING" Name="circuit_timing_summary_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="circuit_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="circuit_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-CTRL" Name="circuit_control_sets_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="circuit_utilization_placed.pb"/>
-  <File Type="PLACE-UTIL" Name="circuit_utilization_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="circuit_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-IO" Name="circuit_io_placed.rpt"/>
-  <File Type="PLACE-DCP" Name="circuit_placed.dcp"/>
-  <File Type="PWROPT-TIMING" Name="circuit_timing_summary_pwropted.rpt"/>
-  <File Type="PWROPT-DRC" Name="circuit_drc_pwropted.rpt"/>
-  <File Type="PWROPT-DCP" Name="circuit_pwropt.dcp"/>
-  <File Type="OPT-TIMING" Name="circuit_timing_summary_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="circuit.hwdef"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="circuit_methodology_drc_opted.rpt"/>
-  <File Type="OPT-DRC" Name="circuit_drc_opted.rpt"/>
-  <File Type="OPT-DCP" Name="circuit_opt.dcp"/>
-  <File Type="INIT-TIMING" Name="circuit_timing_summary_init.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="circuit_bus_skew_routed.rpx"/>
-  <File Type="REPORTS-TCL" Name="circuit_reports.tcl"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="circuit_bus_skew_routed.pb"/>
-  <File Type="PA-TCL" Name="circuit.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/control.vhd">
