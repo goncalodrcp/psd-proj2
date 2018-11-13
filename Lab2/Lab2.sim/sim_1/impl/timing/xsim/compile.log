@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/josecoelho/Documents/IST/PSD/Labs/Lab2/psd-proj2/Lab2/Lab2.sim/sim_1/impl/timing/xsim/circuit_tb_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module circuit
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/josecoelho/Documents/IST/PSD/Labs/Lab2/psd-proj2/Lab2/Lab2.srcs/sim_1/new/circuit_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity circuit_tb

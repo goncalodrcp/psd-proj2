@@ -126,7 +126,7 @@ begin
         Q11 <= "0111110100" after 100 ns; -- 500
 
         operation_selector <= "11" after 205 ns, -- SUB on ADDER1, SUB on ADDER2, same for 215 ns
-                              "01" after 225 ns, -- ADD on ADDER1, SUB on ADDER 2, same for 235 ns, same for 245 ns
+                              "01" after 225 ns, -- ADD on ADDER1, SUB on ADDER2, same for 235 ns, same for 245 ns
                               "00" after 255 ns; -- ADD on ADDER1, ADD on ADDER2
         
         truncate_selector <= "10" after 205 ns, -- TRUNCATE on ADDER1, same for 215 ns
