@@ -97,18 +97,34 @@ begin
         reset <= '1';
         wait for 10*clk_period;
         
-        x <= "00100100" after 50 ns; -- 36
-        y <= "00100100" after 50 ns; -- 36
-        x0 <= "00010100" after 50 ns; -- 20
-        y0 <= "00010100" after 50 ns; -- 20
-        Q00 <= "0001100100" after 50 ns; -- 100
-        Q01 <= "0011001000" after 50 ns; -- 200
-        Q10 <= "0100101100" after 50 ns; -- 300
-        Q11 <= "0111110100" after 50 ns; -- 500
+        x <= "00100100" after 50 ns, -- 36
+             "00011111" after 500 ns; -- 31
+
+        y <= "00100100" after 50 ns, -- 36
+             "00011111" after 500 ns; -- 31
+
+        x0 <= "00010100" after 50 ns, -- 20
+              "00000000" after 500 ns; -- 0
+
+        y0 <= "00010100" after 50 ns, -- 20
+              "00000000" after 500 ns; -- 0
+
+        Q00 <= "0001100100" after 50 ns, -- 100
+               "0111111111" after 500 ns; -- 511
+
+
+        Q01 <= "0011001000" after 50 ns, -- 200
+               "0111111111" after 500 ns; -- 511
+
+        Q10 <= "0100101100" after 50 ns, -- 300
+               "1000000000" after 500 ns; -- -512
+
+        Q11 <= "0111110100" after 50 ns, -- 500
+               "1000000000" after 500 ns; -- -512
         
-        reset <= '0' after 100 ns,
+        reset <= '0' after 95 ns,
                  '1' after 400 ns,
-                 '0' after 450 ns;
+                 '0' after 660 ns;
  
         wait;
     end process;

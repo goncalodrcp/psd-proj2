@@ -74,6 +74,7 @@ set rc [catch {
   set_property ip_output_repo /home/josecoelho/Documents/IST/PSD/Labs/Lab2/psd-proj2/Lab2/Lab2.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   add_files -quiet /home/josecoelho/Documents/IST/PSD/Labs/Lab2/psd-proj2/Lab2/Lab2.runs/synth_1/circuit.dcp
+  read_xdc /home/josecoelho/Documents/IST/PSD/Labs/Lab2/psd-proj2/Files/Basys3_Master.xdc
   link_design -top circuit -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]

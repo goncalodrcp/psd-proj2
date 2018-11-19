@@ -46,21 +46,21 @@ port (
     P : out std_logic_vector (9 downto 0);
     -- control signals
     clk : in std_logic;
-    reset: in std_logic;
+    reset : in std_logic;
     -- Enable mapping:
     --    4       3       2       1       0
     -- | RA(1) | RB(1) | RC(1) | RD(1) | RP(1) | 
-    enables: in std_logic_vector (4 downto 0);
+    enables : in std_logic_vector (4 downto 0);
     -- Mux mapping:
     -- |   9:8   |    7    |   6:5   |   4:3   |    2    |    1    |    0    |
     -- | MUX1(2) | MUX2(1) | MUX3(2) | MUX4(2) | MUX5(1) | MUX6(1) | MUX7(1) |
-    muxes: in std_logic_vector (9 downto 0);
+    muxes : in std_logic_vector (9 downto 0);
     -- Adder/subtractor controller mapping:
     -- | AS1(1) | AS2(1) | (Legend - 0: ADD | 1: SUB)
-    operation_selector: in std_logic_vector (1 downto 0);
+    operation_selector : in std_logic_vector (1 downto 0);
     -- Truncate signal controller mapping:
     -- | TRUNCATE1(1) | TRUNCATE2(1) | (Legend - 0: Not truncate | 1: Truncate)
-    truncate_selector: in std_logic_vector (1 downto 0)
+    truncate_selector : in std_logic_vector (1 downto 0)
 );
 end datapath;
 
@@ -81,31 +81,31 @@ architecture Behavioral of datapath is
     signal RP : std_logic_vector(9 downto 0);
 
     -- Intermediate registers:
-    signal RA, RA_entry: std_logic_vector(10 downto 0); -- TODO: Check vector size
-    signal RB, RB_entry: std_logic_vector(10 downto 0); -- TODO: Check vector size
-    signal RC: std_logic_vector(10 downto 0); -- TODO: Check vector size
-    signal RD: std_logic_vector(10 downto 0); -- TODO: Check vector size
+    signal RA, RA_entry : std_logic_vector(10 downto 0);
+    signal RB, RB_entry : std_logic_vector(10 downto 0);
+    signal RC : std_logic_vector(10 downto 0);
+    signal RD : std_logic_vector(10 downto 0);
 
     -- Internal signaling
-    signal adder1_entry_a : signed(10 downto 0); -- TODO: Check vector size
-    signal adder1_entry_b : signed(10 downto 0); -- TODO: Check vector size
-    signal adder1_add: std_logic_vector(10 downto 0); -- TODO: Check vector size
-    signal adder1_sub: std_logic_vector(10 downto 0); -- TODO: Check vector size
-    signal adder1_result: std_logic_vector(10 downto 0); -- TODO: Check vector size
-    signal adder1_truncated: std_logic_vector(10 downto 0); -- TODO: Check vector size
-    signal adder1_result_truncated: std_logic_vector(10 downto 0); -- TODO: Check vector size
+    signal adder1_entry_a : signed(10 downto 0);
+    signal adder1_entry_b : signed(10 downto 0);
+    signal adder1_add : std_logic_vector(10 downto 0);
+    signal adder1_sub : std_logic_vector(10 downto 0);
+    signal adder1_result : std_logic_vector(10 downto 0);
+    signal adder1_truncated : std_logic_vector(10 downto 0);
+    signal adder1_result_truncated : std_logic_vector(10 downto 0);
 
-    signal adder2_entry_a : signed(10 downto 0); -- TODO: Check vector size
-    signal adder2_entry_b : signed(10 downto 0); -- TODO: Check vector size
-    signal adder2_add: std_logic_vector(10 downto 0); -- TODO: Check vector size
-    signal adder2_sub: std_logic_vector(10 downto 0); -- TODO: Check vector size
-    signal adder2_result: std_logic_vector(10 downto 0); -- TODO: Check vector size
-    signal adder2_truncated: std_logic_vector(10 downto 0); -- TODO: Check vector size
-    signal adder2_result_truncated: std_logic_vector(10 downto 0); -- TODO: Check vector size
+    signal adder2_entry_a : signed(10 downto 0);
+    signal adder2_entry_b : signed(10 downto 0);
+    signal adder2_add : std_logic_vector(10 downto 0);
+    signal adder2_sub : std_logic_vector(10 downto 0);
+    signal adder2_result : std_logic_vector(10 downto 0);
+    signal adder2_truncated : std_logic_vector(10 downto 0);
+    signal adder2_result_truncated : std_logic_vector(10 downto 0);
 
-    signal multiplier_entry_b : signed(10 downto 0); -- TODO: Check vector size
-    signal multiplier_result : std_logic_vector(21 downto 0); -- TODO: Check vector size
-    signal multiplier_result_truncated : std_logic_vector(10 downto 0); -- TODO: Check vector size
+    signal multiplier_entry_b : signed(10 downto 0);
+    signal multiplier_result : std_logic_vector(21 downto 0);
+    signal multiplier_result_truncated : std_logic_vector(10 downto 0);
 
 begin
     -- Architecture body

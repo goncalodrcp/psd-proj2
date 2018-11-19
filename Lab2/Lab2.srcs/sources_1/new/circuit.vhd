@@ -43,7 +43,8 @@ port (
     y0 : in std_logic_vector (7 downto 0);
     clk : in std_logic;
     reset: in std_logic;
-    P : out std_logic_vector (9 downto 0)
+    P : out std_logic_vector (9 downto 0);
+    done : out std_logic
 );
 end circuit;
 
@@ -52,10 +53,11 @@ architecture Behavioral of circuit is
     port (
         clk : in std_logic;
         reset : in std_logic;
-        enables: out std_logic_vector (4 downto 0);
-        muxes: out std_logic_vector (9 downto 0);
-        operation_selector: out std_logic_vector (1 downto 0);
-        truncate_selector: out std_logic_vector (1 downto 0)
+        enables : out std_logic_vector (4 downto 0);
+        muxes : out std_logic_vector (9 downto 0);
+        operation_selector : out std_logic_vector (1 downto 0);
+        truncate_selector : out std_logic_vector (1 downto 0);
+        done : out std_logic
     );
     end component;
     
@@ -71,11 +73,11 @@ architecture Behavioral of circuit is
         y0 : in std_logic_vector (7 downto 0);
         P : out std_logic_vector (9 downto 0);
         clk : in std_logic;
-        reset: in std_logic;
-        enables: in std_logic_vector (4 downto 0);
-        muxes: in std_logic_vector (9 downto 0);
-        operation_selector: in std_logic_vector (1 downto 0);
-        truncate_selector: in std_logic_vector (1 downto 0)
+        reset : in std_logic;
+        enables : in std_logic_vector (4 downto 0);
+        muxes : in std_logic_vector (9 downto 0);
+        operation_selector : in std_logic_vector (1 downto 0);
+        truncate_selector : in std_logic_vector (1 downto 0)
     );
     end component;
     
@@ -93,7 +95,8 @@ begin
         enables => enables,
         muxes => muxes,
         operation_selector => operation_selector,
-        truncate_selector => truncate_selector
+        truncate_selector => truncate_selector,
+        done => done
     );
     
     inst_datapath: datapath
