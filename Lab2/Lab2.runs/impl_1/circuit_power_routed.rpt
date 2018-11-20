@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
-| Date             : Mon Nov 19 12:13:41 2018
+| Date             : Mon Nov 19 17:27:12 2018
 | Host             : coelhopc running 64-bit Ubuntu 18.10
 | Command          : report_power -file circuit_power_routed.rpt -pb circuit_power_summary_routed.pb -rpx circuit_power_routed.rpx
 | Design           : circuit
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.072        |
+| Total On-Chip Power (W)  | 0.073        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.004        |
+| Dynamic (W)              | 0.005        |
 | Device Static (W)        | 0.068        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.6         |
@@ -52,17 +52,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.001 |        3 |       --- |             --- |
+| Clocks         |     0.002 |        3 |       --- |             --- |
 | Slice Logic    |    <0.001 |      264 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      110 |     20800 |            0.53 |
+|   LUT as Logic |    <0.001 |      115 |     20800 |            0.55 |
 |   Register     |    <0.001 |      137 |     41600 |            0.33 |
 |   CARRY4       |    <0.001 |        6 |      8150 |            0.07 |
 |   Others       |     0.000 |        6 |       --- |             --- |
-| Signals        |    <0.001 |      329 |       --- |             --- |
-| DSPs           |    <0.001 |        1 |        90 |            1.11 |
+| Signals        |     0.001 |      322 |       --- |             --- |
+| DSPs           |     0.001 |        1 |        90 |            1.11 |
 | I/O            |    <0.001 |       85 |       106 |           80.19 |
 | Static Power   |     0.068 |          |           |                 |
-| Total          |     0.072 |          |           |                 |
+| Total          |     0.073 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,7 +72,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.013 |       0.004 |      0.010 |
+| Vccint    |       1.000 |     0.015 |       0.005 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -128,7 +128,7 @@ Table of Contents
 +-------------+--------+-----------------+
 | Clock       | Domain | Constraint (ns) |
 +-------------+--------+-----------------+
-| sys_clk_pin | clk    |            10.0 |
+| sys_clk_pin | clk    |             7.4 |
 +-------------+--------+-----------------+
 
 
@@ -141,9 +141,9 @@ Table of Contents
 +-----------------+-----------+
 | Name            | Power (W) |
 +-----------------+-----------+
-| circuit         |     0.004 |
+| circuit         |     0.005 |
 |   inst_control  |    <0.001 |
-|   inst_datapath |     0.002 |
+|   inst_datapath |     0.003 |
 +-----------------+-----------+
 
 
